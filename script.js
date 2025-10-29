@@ -39,8 +39,7 @@ const itens = [
 
 function filtrarItens() {
   const tipo = document.getElementById("tipoFiltro").value;
-  const corSelect = document.getElementById("corFiltro");
-  const coresSelecionadas = Array.from(corSelect.selectedOptions).map(opt => opt.value);
+  const cor = document.getElementById("corFiltro").value;
   const local = document.getElementById("localFiltro").value;
   const data = document.getElementById("dataFiltro").value;
   const container = document.getElementById("itensContainer");
@@ -48,7 +47,7 @@ function filtrarItens() {
 
   const filtrados = itens.filter(item =>
     (tipo === "" || item.tipo === tipo) &&
-    (coresSelecionadas.length === 0 || coresSelecionadas.includes(item.cor)) &&
+    (cor === "" || item.cor === cor) &&
     (local === "" || item.local === local) &&
     (data === "" || item.data === data)
   );
