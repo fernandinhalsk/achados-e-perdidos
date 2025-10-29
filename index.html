@@ -1,30 +1,71 @@
-<select id="tipoFiltro">
-  <option value="" disabled selected>Selecione o tipo de item</option>
-  <option value="mochila">Mochila</option>
-  <option value="estojo">Estojo</option>
-  <option value="garrafa">Garrafa</option>
-  <option value="roupa">Roupa</option>
-</select>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Achei! - Achados e Perdidos Escolar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Achei!</h1>
+    <p>Achados e Perdidos Escolar</p>
+  </header>
 
-<select id="corFiltro">
-  <option value="" disabled selected>Selecione a cor</option>
-  <option value="rosa">Rosa</option>
-  <option value="azul">Azul</option>
-  <option value="preto">Preto</option>
-  <option value="verde">Verde</option>
-</select>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Buscar Itens</a>
+    <a href="#">Cadastrar Item</a>
+    <a href="#">Login</a>
+  </nav>
 
-<select id="localFiltro">
-  <option value="" disabled selected>Selecione o local</option>
-  <option value="sala 203">Sala 203</option>
-  <option value="biblioteca">Biblioteca</option>
-  <option value="quadra">Quadra</option>
-  <option value="cantina">Cantina</option>
-</select>
+  <main>
+    <section class="search">
+      <h2>Filtrar Itens Perdidos</h2>
+      <select id="tipoFiltro">
+        <option value="" disabled selected>Selecione o tipo de item</option>
+        <option value="mochila">Mochila</option>
+        <option value="estojo">Estojo</option>
+        <option value="garrafa">Garrafa</option>
+        <option value="roupa">Roupa</option>
+      </select>
 
-<select id="dataFiltro">
-  <option value="" disabled selected>Selecione a data aproximada</option>
-  <option value="25/10">25/10</option>
-  <option value="26/10">26/10</option>
-  <option value="27/10">27/10</option>
-</select>
+      <select id="corFiltro">
+        <option value="" disabled selected>Selecione a cor</option>
+        <option value="rosa">Rosa</option>
+        <option value="azul">Azul</option>
+        <option value="preto">Preto</option>
+        <option value="verde">Verde</option>
+      </select>
+
+      <select id="localFiltro">
+        <option value="" disabled selected>Selecione o local</option>
+        <option value="sala 203">Sala 203</option>
+        <option value="biblioteca">Biblioteca</option>
+        <option value="quadra">Quadra</option>
+        <option value="cantina">Cantina</option>
+      </select>
+
+      <select id="dataFiltro">
+        <option value="" disabled selected>Selecione a data aproximada</option>
+        <option value="25/10">25/10</option>
+        <option value="26/10">26/10</option>
+        <option value="27/10">27/10</option>
+      </select>
+
+      <button onclick="filtrarItens()">Buscar</button>
+    </section>
+
+    <section class="itens" id="itensContainer">
+      <!-- Cards de itens aparecem aqui -->
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Achei! - Todos os direitos reservados.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
