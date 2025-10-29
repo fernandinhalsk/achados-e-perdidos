@@ -25,6 +25,15 @@ const itens = [
     nome: "Pulseira Azul",
     descricao: "Encontrada no refeitório em 26/10",
     imagem: "imagens/pulseira-azul.jpg"
+  },
+  {
+    tipo: "roupa",
+    cor: "estampa",
+    local: "corredor 01",
+    data: "25/10",
+    nome: "Camisa Estampada",
+    descricao: "Encontrada no corredor 01 em 25/10",
+    imagem: "imagens/camisa-estampada.jpg"
   }
 ];
 

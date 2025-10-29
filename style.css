@@ -13,9 +13,8 @@ body {
   line-height: 1.6;
 }
 
-/* Cabeçalho */
 header {
-  background-color: #5c6bc0; /* azul suave */
+  background-color: #5c6bc0;
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -31,9 +30,8 @@ header p {
   font-size: 1.2em;
 }
 
-/* Navegação */
 nav {
-  background-color: #9575cd; /* roxo suave */
+  background-color: #9575cd;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -53,7 +51,6 @@ nav a:hover {
   color: #e6ecf9;
 }
 
-/* Filtros */
 .search {
   background-color: #fff;
   margin: 40px auto;
@@ -81,6 +78,12 @@ nav a:hover {
   background-color: #f3e6ff;
 }
 
+.search select[multiple] {
+  height: auto;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
 .search button {
   padding: 12px 30px;
   background-color: #5c6bc0;
@@ -97,7 +100,6 @@ nav a:hover {
   background-color: #3f51b5;
 }
 
-/* Cards de itens */
 .itens {
   display: flex;
   flex-wrap: wrap;
@@ -151,7 +153,6 @@ nav a:hover {
   background-color: #7e57c2;
 }
 
-/* Rodapé */
 footer {
   background-color: #5c6bc0;
   color: white;
