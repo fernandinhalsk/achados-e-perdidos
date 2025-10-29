@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Achei! - Achados e Perdidos Escolar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Achei!</h1>
+    <p>Achados e Perdidos Escolar</p>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Buscar Itens</a>
+    <a href="#">Cadastrar Item</a>
+    <a href="#">Login</a>
+  </nav>
+
+  <main>
+    <section class="search">
+      <input type="text" id="searchInput" placeholder="Buscar por cor, local, tipo..." />
+      <button onclick="buscarItens()">Buscar</button>
+    </section>
+
+    <section class="itens" id="itensContainer">
+      <!-- Cards de itens serão inseridos aqui -->
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Achei! - Todos os direitos reservados.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

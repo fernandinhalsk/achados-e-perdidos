@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffe6f0;
+  color: #333;
+}
+
+header {
+  background-color: #ff66b2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: #ff99cc;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search {
+  text-align: center;
+  margin: 20px;
+}
+
+.search input {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ff99cc;
+  border-radius: 5px;
+}
+
+.search button {
+  padding: 10px 20px;
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.itens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.item-card {
+  background-color: white;
+  border: 2px solid #ffb3d9;
+  border-radius: 10px;
+  width: 300px;
+  padding: 15px;
+  text-align: center;
+}
+
+.item-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #ff66b2;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
