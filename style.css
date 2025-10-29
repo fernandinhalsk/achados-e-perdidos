@@ -1,79 +1,156 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #ffe6f0;
+  background: linear-gradient(to bottom right, #ffe6f0, #fff0f5);
   color: #333;
 }
 
+/* Cabeçalho */
 header {
   background-color: #ff66b2;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Navegação */
 nav {
   background-color: #ff99cc;
-  text-align: center;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
 }
 
 nav a {
   color: white;
-  margin: 0 15px;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
 }
 
+nav a:hover {
+  color: #ffe6f0;
+}
+
+/* Filtros */
 .search {
+  background-color: #fff;
+  margin: 30px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
-  margin: 20px;
 }
 
-.search input {
+.search h2 {
+  margin-bottom: 20px;
+  color: #ff3399;
+}
+
+.search select {
   padding: 10px;
-  width: 60%;
+  margin: 10px;
   border: 1px solid #ff99cc;
-  border-radius: 5px;
+  border-radius: 8px;
+  width: 180px;
+  font-size: 1em;
 }
 
 .search button {
-  padding: 10px 20px;
+  padding: 10px 25px;
   background-color: #ff66b2;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1em;
   cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
 }
 
+.search button:hover {
+  background-color: #ff3399;
+}
+
+/* Cards de itens */
 .itens {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   padding: 20px;
 }
 
 .item-card {
   background-color: white;
   border: 2px solid #ffb3d9;
-  border-radius: 10px;
-  width: 300px;
+  border-radius: 15px;
+  width: 280px;
   padding: 15px;
-  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.item-card:hover {
+  transform: scale(1.03);
 }
 
 .item-card img {
   width: 100%;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
+.item-card h3 {
+  color: #ff3399;
+  margin-bottom: 8px;
+}
+
+.item-card p {
+  font-size: 0.95em;
+  margin-bottom: 12px;
+}
+
+.item-card button {
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item-card button:hover {
+  background-color: #ff3399;
+}
+
+/* Rodapé */
 footer {
   background-color: #ff66b2;
   color: white;
   text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  padding: 15px;
+  font-size: 0.9em;
+  margin-top: 40px;
 }
