@@ -1,4 +1,6 @@
-/* Reset básico */
+/* Importando fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +8,10 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #ffe6f0, #fff0f5);
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to bottom right, #fff0f5, #ffe6f0);
   color: #333;
+  line-height: 1.6;
 }
 
 /* Cabeçalho */
@@ -16,12 +19,12 @@ header {
   background-color: #ff66b2;
   color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 40px 20px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 2.8em;
   margin-bottom: 10px;
 }
 
@@ -34,13 +37,14 @@ nav {
   background-color: #ff99cc;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 25px;
   padding: 15px;
 }
 
 nav a {
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   font-size: 1em;
   transition: color 0.3s;
@@ -53,38 +57,40 @@ nav a:hover {
 /* Filtros */
 .search {
   background-color: #fff;
-  margin: 30px auto;
-  padding: 20px;
+  margin: 40px auto;
+  padding: 30px;
   width: 90%;
-  max-width: 800px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   text-align: center;
 }
 
 .search h2 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #ff3399;
+  font-size: 1.5em;
 }
 
 .search select {
-  padding: 10px;
+  padding: 12px;
   margin: 10px;
   border: 1px solid #ff99cc;
-  border-radius: 8px;
-  width: 180px;
+  border-radius: 10px;
+  width: 200px;
   font-size: 1em;
+  background-color: #fff0f5;
 }
 
 .search button {
-  padding: 10px 25px;
+  padding: 12px 30px;
   background-color: #ff66b2;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 1em;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 20px;
   transition: background-color 0.3s;
 }
 
@@ -104,10 +110,10 @@ nav a:hover {
 .item-card {
   background-color: white;
   border: 2px solid #ffb3d9;
-  border-radius: 15px;
-  width: 280px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
 
@@ -117,26 +123,27 @@ nav a:hover {
 
 .item-card img {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .item-card h3 {
   color: #ff3399;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
 .item-card p {
   font-size: 0.95em;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .item-card button {
   background-color: #ff66b2;
   color: white;
   border: none;
-  padding: 10px;
-  border-radius: 8px;
+  padding: 10px 20px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -150,7 +157,7 @@ footer {
   background-color: #ff66b2;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   font-size: 0.9em;
   margin-top: 40px;
 }
